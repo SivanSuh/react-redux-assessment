@@ -8,7 +8,9 @@ const LOCAL_STORAGE = JSON.parse(localStorage.getItem("persistantState"));
 //{ id: nanoid(), title: "First Post!", priority: "Acil" }
 const formSlice = createSlice({
   name: "form",
-  initialState: LOCAL_STORAGE ? LOCAL_STORAGE.form : [],
+  initialState: LOCAL_STORAGE
+    ? LOCAL_STORAGE.form
+    : [{ id: nanoid(), title: "First Post!", priority: "Acil" }],
 
   reducers: {
     addForm: (state, action) => {
