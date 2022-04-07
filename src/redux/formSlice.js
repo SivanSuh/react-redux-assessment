@@ -1,9 +1,10 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 {
-  /* REDUX SLİCE  */
+  /* REDUX TOOLKİT  SLİCE  */
 }
-
+console.log(localStorage.getItem("persistantState"));
+//{ id: nanoid(), title: "First Post!", priority: "Acil" }
 const formSlice = createSlice({
   name: "form",
   initialState: [{ id: nanoid(), title: "First Post!", priority: "Acil" }],

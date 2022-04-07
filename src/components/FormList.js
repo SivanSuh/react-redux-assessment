@@ -48,6 +48,7 @@ const FormList = () => {
     align-items:center;
     border-top:1px solid gray;
   `;
+
   const todoValue = post.map((posts) => {
     return <FormItems key={posts.id} posts={posts} />;
   });

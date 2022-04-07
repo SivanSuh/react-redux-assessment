@@ -26,7 +26,8 @@ const Navbar = () => {
         src="https://media-exp1.licdn.com/dms/image/C4D0BAQEUM8B4HQi2-A/company-logo_200_200/0/1532249937732?e=1657152000&v=beta&t=84yPZXKhANDBikbqG6EiAnREW5G3wbBN-5DOqdgD4rM"
         alt="foto"
       />
-      <LogoName>Rise Technology, Consulting & Academy</LogoName>
+
+      <LogoName>Rise Technology, Consulting Academy</LogoName>
     </NavbarComponent>
   );
 };

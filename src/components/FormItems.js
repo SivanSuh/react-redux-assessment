@@ -16,7 +16,7 @@ const FormItems = ({ posts }) => {
   const dispatch = useDispatch();
   const Wrap = styled.div`
     width: 100%;
-    margin: 0 auto;
+
     border: 1px solid #e4eafd;
     display: flex;
     padding: 10px;
@@ -38,10 +38,11 @@ const FormItems = ({ posts }) => {
     cursor: pointer;
   `;
   const Category = styled.div`
-    padding: 10px;
-
     font-weight: bold;
     color: white;
+    width: 70px;
+    padding: 8px;
+    text-align: center;
     border-radius: 5px;
     ${posts.priority === "Acil"
       ? "background-color:#E83D6D;"
@@ -75,7 +76,7 @@ const FormItems = ({ posts }) => {
     padding: 15px;
   `;
   const Title = styled.div`
-    width: auto;
+    width: 50%;
   `;
   const Select = styled.select`
     width: 90%;
